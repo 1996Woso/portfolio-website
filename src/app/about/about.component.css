@@ -1,0 +1,17 @@
+img {
+    min-height: 15rem;
+    min-width: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
+
+    border-radius: 1rem;
+}
+
+.about {
+    border-radius: 0.4rem;
+    background-color: rgb(232, 224, 224);
+    border-left: 5rem solid  #9ca3af;
+    border-right: 5rem solid #9ca3af;
+    border-bottom: 1.5rem solid #374151;
+    border-top: 1.5rem solid 	#374151
+}

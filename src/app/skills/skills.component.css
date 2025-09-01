@@ -1,0 +1,11 @@
+.skills-info {
+  background-color: rgba(236, 227, 227, 0.658);
+  color: rgb(35, 34, 34);
+  border-radius: 0.4rem;
+  border-left: 3rem solid darkgray;
+  border-right: 3rem solid darkgray;
+}
+
+.bi-pc-display-horizontal {
+  color: grey
+}

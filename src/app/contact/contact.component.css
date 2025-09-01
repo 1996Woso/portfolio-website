@@ -1,0 +1,22 @@
+a {
+  color: brown;
+}
+
+hr {
+  height: 5px;
+  border: none;
+  background: linear-gradient(to right, #020c16, #333435);
+  border-radius: 2px;
+}
+
+.contact-info {
+  background-color: rgba(236, 227, 227, 0.658);
+  color: white;
+  border-radius: 0.4rem;
+}
+
+.heading {
+  background-color: rgba(71, 120, 141, 0.658);
+  color: rgb(52, 50, 50);
+  border-radius: 0.4rem;
+}

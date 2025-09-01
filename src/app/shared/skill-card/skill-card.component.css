@@ -1,0 +1,13 @@
+img {
+    width: 100%;  height: auto;
+}
+.card {
+    width: 5rem;
+    height: 6.5rem;
+    border: 2px solid rgb(177, 171, 171);
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: bold;
+}

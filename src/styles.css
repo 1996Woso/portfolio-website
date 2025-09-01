@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  /* margin: 0; */
+  background-color: #c0bdc3;
+}
+
+main {
+  width: 80%;
+  margin: 3rem 10%;
+}
+
+#dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 85rem;
+}
+
+@media (min-width: 768px) {
+  #dashboard {
+    flex-direction: row;
+  }
+}
+
+/*Icons*/
+.bi-tools {
+    color: silver
+}
+
+.bi-postage-fill {
+    color: rgb(167, 149, 47);
+}
+
+.bi-calendar-check-fill {
+    color: rgb(108, 162, 114);
+}
+
+.bi-geo-fill {
+    color: rgb(176, 57, 57);
+}
+
+.bi-bank {
+    color: black;
+}
+
+.bi-rocket-takeoff {
+    color: brown;
+}
+
+.bi-luggage-fill {
+    color: white;
+}
+
+.bi-database-fill {
+  color: firebrick;
+}
+
+.bi-pc-display-horizontal {
+  color: grey
+}
+
+.bi-gear-fill {
+  color: silver;
+}
+
+.fa-certificate {
+    color: rgb(167, 149, 47);
+}
+
+.bi-mortarboard-fill {
+    color:black;
+}
+
+.bi-bar-chart-line-fill {
+  color: rgb(107, 58, 181);
+}
+
+.bi-calculator-fill {
+  color: rgb(162, 124, 54);
+}
+
+.fa-brain {
+  color: rgb(202, 148, 47);
+}
+
+.bi-linkedin {
+  color: rgb(14, 14, 251);
+}
+
+.bi-whatsapp {
+  color: rgb(15, 235, 15);
+}
+
+.bi-telephone-fill {
+  color: rgb(15, 235, 15);
+}
+
+.bi-emoji-smile-fill {
+  color: rgb(87, 53, 53);
+}
