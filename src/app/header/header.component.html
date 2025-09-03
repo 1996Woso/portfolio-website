@@ -1,22 +1,78 @@
 <header>
-  <img src="picture.jpg" alt="my picture" />
+  <p (click)="goToHome()">Eviwe</p>
   <nav>
     <ul>
       <li>
-        <a routerLink="/about"><i class="bi bi-file-person-fill"></i> About</a>
+        <a routerLink="/about" class="btn"
+          ><i class="bi bi-file-person-fill"></i> About</a
+        >
       </li>
       <li>
-        <a routerLink="/experience"><i class="bi bi-luggage-fill"></i> Experience</a>
-      </li>
-        <li>
-        <a routerLink="/skills"><i class="bi bi-tools"></i> Skills</a>
-      </li>
-       <li>
-        <a routerLink="/education"><i class="bi bi-mortarboard-fill"></i> Education</a>
+        <a routerLink="/experience" class="btn"
+          ><i class="bi bi-luggage-fill"></i> Experience</a
+        >
       </li>
       <li>
-        <a routerLink="/contact"><i class="bi bi-telephone-fill"></i> Contact</a>
+        <a routerLink="/projects" class="btn"
+          ><i class="bi bi-rocket-takeoff"></i> Projects</a
+        >
+      </li>
+      <li>
+        <a routerLink="/skills" class="btn"
+          ><i class="bi bi-tools"></i> Skills</a
+        >
+      </li>
+      <li>
+        <a routerLink="/education" class="btn"
+          ><i class="bi bi-mortarboard-fill"></i> Education</a
+        >
+      </li>
+      <li>
+        <a routerLink="/contact" class="btn"
+          ><i class="bi bi-telephone-fill"></i> Contact</a
+        >
       </li>
     </ul>
   </nav>
 </header>
+<!--For small screens-->
+<div #offScreenMenu class="off-screen-menu">
+  <ul>
+    <li>
+      <a routerLink="/about" class="btn"
+        ><i class="bi bi-file-person-fill"></i> About</a
+      >
+    </li>
+    <li>
+      <a routerLink="/experience" class="btn"
+        ><i class="bi bi-luggage-fill"></i> Experience</a
+      >
+    </li>
+    <li>
+      <a routerLink="/projects" class="btn"
+        ><i class="bi bi-rocket-takeoff"></i> Projects</a
+      >
+    </li>
+    <li>
+      <a routerLink="/skills" class="btn"><i class="bi bi-tools"></i> Skills</a>
+    </li>
+    <li>
+      <a routerLink="/education" class="btn"
+        ><i class="bi bi-mortarboard-fill"></i> Education</a
+      >
+    </li>
+    <li>
+      <a routerLink="/contact" class="btn"
+        ><i class="bi bi-telephone-fill"></i> Contact</a
+      >
+    </li>
+  </ul>
+</div>
+<!--Humburger button-->
+<nav>
+  <div #hamMenu class="ham-menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>

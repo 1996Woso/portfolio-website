@@ -6,8 +6,8 @@
         <span heading-title>Professional Experience</span>
         <span heading-sub>2+ working experience</span>
       </app-heading>
-      <div class="row education-info">
-        <div class="col-12 p-2">
+      <app-details>
+        <ng-content>
           <p>
             <b>Software Developer & Data Analyst Intern</b>
             <br />
@@ -43,8 +43,8 @@
             <span class="tool">MS SQL Server</span> &nbsp;
             <span class="tool">IIS</span>
           </p>
-        </div>
-      </div>
+        </ng-content>
+      </app-details>
     </div>
   </div>
 </div>

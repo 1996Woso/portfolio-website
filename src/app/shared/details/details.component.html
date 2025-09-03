@@ -1,0 +1,12 @@
+<div class="row mb-3">
+  <div class="col-12 p-2">
+    <p>
+      <b><ng-content select="[skills-title]" /> </b>
+    </p>
+    <ng-content select="[line]" />
+    <ng-content />
+    <div class="d-flex justify-content-start flex-wrap gap-3">
+      <ng-content select="[skills-list]" />
+    </div>
+  </div>
+</div>

@@ -6,8 +6,8 @@
         <span heading-title>Educational Background</span>
         <span heading-sub>Academic foundation and qualifications</span>
       </app-heading>
-      <div class="row education-info">
-        <div class="col-12 p-2">
+      <app-details>
+        <ng-content>
           <p class="text-center">
             <b
               >BSc in Mathematics & Mathematical Statistics</b
@@ -30,8 +30,8 @@
             <br>
             <i class="bi bi-bar-chart-line-fill"></i> Descriptive Statistics, Probability Theory, Inference, Multivariate Analysis, Regression Analysis, Generalized Linear Models Time Series Analysis.
         </p>
-        </div>
-      </div>
+        </ng-content>
+      </app-details>
     </div>
   </div>
 </div>

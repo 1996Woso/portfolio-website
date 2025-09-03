@@ -7,117 +7,60 @@
         <span heading-sub>Full-stack development proficiency</span>
       </app-heading>
       <!--Progamming languages-->
-      <div class="row skills-info mb-3">
-        <div class="col-12 col-xs-12 col-sm-12 p-2">
-          <p>
-            <b
-              ><i class="bi bi-pc-display-horizontal"></i> Programming
-              Languages</b
-            >
-            <br />
-          </p>
-
-          <app-horizontal-line />
-          <div class="d-flex justify-content-start flex-wrap gap-3">
+      <app-details>
+        <span skills-title
+          ><i class="bi bi-pc-display-horizontal"></i> Programming Languages
+        </span>
+        <ng-container skills-list>
             <app-skill-card
-              imageUrl="C.png"
-              imageName="C#"
-              imageAlt="C# Image"
+              *ngFor="
+                let skill of skillsService.getProgrammingLanguages();
+                let i = index
+              "
+              [imageUrl]="skill.url"
+              [imageAlt]="skill.alt"
+              [imageName]="skill.caption!"
             />
-            <app-skill-card
-              imageUrl="javascript.png"
-              imageName="JavaScript"
-              imageAlt="JavaScript Image"
-            />
-            <app-skill-card
-              imageUrl="typescript.png"
-              imageName="TypeScript"
-              imageAlt="TypeScript Image"
-            />
-          </div>
-        </div>
-      </div>
+        </ng-container>
+      </app-details>
       <!--Frameworks-->
-      <div class="row skills-info mb-3">
-        <div class="col-12 col-xs-12 col-sm-12 p-2">
-          <p>
-            <b><i class="bi bi-pc-display-horizontal"></i> Frameworks </b>
-            <br />
-          </p>
-
-          <app-horizontal-line />
-          <div class="d-flex justify-content-start flex-wrap gap-3">
-            <app-skill-card
-              imageUrl="NET core.png"
-              imageName=".NET Core"
-              imageAlt=".NET Core"
-            />
-            <app-skill-card imageUrl="MVC.png" imageName="MVC" imageAlt="MVC" />
-            <app-skill-card
-              imageUrl="ASP.NET Core.png"
-              imageName="ASP.NET Core"
-              imageAlt="ASP.NET Core"
-            />
-            <app-skill-card
-              imageUrl="Angular.png"
-              imageName="Angular"
-              imageAlt="Angular"
-            />
-            <app-skill-card
-              imageUrl="Blazor.png"
-              imageName="Blazor"
-              imageAlt="Angular"
-            />
-          </div>
-        </div>
-      </div>
+      <app-details>
+        <span skills-title>
+          <i class="bi bi-globe2"></i> Frameworks
+        </span>
+        <ng-container skills-list>
+          <app-skill-card 
+            *ngFor="let skill of skillsService.getFrameworks(); let i = index"
+            [imageUrl]="skill.url"
+            [imageAlt]="skill.alt"
+            [imageName]="skill.caption!"
+          />
+        </ng-container>
+      </app-details>
       <!--Databases-->
-      <div class="row skills-info mb-3">
-        <div class="col-12 col-xs-12 col-sm-12 p-2">
-          <p>
-            <b><i class="bi bi-database-fill"></i> Databases </b>
-            <br />
-          </p>
-
-          <app-horizontal-line />
-          <div class="d-flex justify-content-start flex-wrap gap-3">
-            <app-skill-card
-              imageUrl="Microsoft SQL Server.png"
-              imageName="SQL Server"
-              imageAlt="SQL Server"
-            />
-          </div>
-        </div>
-      </div>
+      <app-details>
+        <span skills-title><i class="bi bi-database-fill"></i> Databases </span>
+        <ng-container skills-list>
+          <app-skill-card
+            *ngFor="let skill of databaseSkills; let i = index"
+            [imageUrl]="skill.url"
+            [imageAlt]="skill.alt"
+            [imageName]="skill.caption!"
+          />
+        </ng-container>
+      </app-details>
       <!--Tools and Technologies-->
-      <div class="row skills-info mb-3">
-        <div class="col-12 col-xs-12 col-sm-12 p-2">
-          <p>
-            <b><i class="bi bi-gear-fill"></i> Tools and Technologies </b>
-            <br />
-          </p>
-
-          <app-horizontal-line />
-          <div class="d-flex justify-content-start flex-wrap gap-3">
-            <app-skill-card
-              imageUrl="HTML5.png"
-              imageName="HTML5"
-              imageAlt="HTML"
-            />
-            <app-skill-card
-              imageUrl="CSS3.png"
-              imageName="CSS3"
-              imageAlt="CSS"
-            />
-            <app-skill-card
-              imageUrl="Bootstrap.png"
-              imageName="Bootstrap"
-              imageAlt="Bootstrap"
-            />
-            <app-skill-card imageUrl="Git.png" imageName="Git" imageAlt="Git" />
-          </div>
-        </div>
-      </div>
+      <app-details>
+        <span skills-title><i class="bi bi-gear-fill"></i> Tools and Technologies</span>
+        <ng-container skills-list>
+          <app-skill-card
+            *ngFor="let skill of skillsService.getToolsAndTechnologies(); let i = index"
+            [imageUrl]="skill.url"
+            [imageAlt]="skill.alt"
+            [imageName]="skill.caption!"
+          />
+        </ng-container>
+      </app-details>
     </div>
   </div>
 </div>
