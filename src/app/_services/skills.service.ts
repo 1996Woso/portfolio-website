@@ -20,6 +20,16 @@ export class SkillsService {
       alt: 'TS logo',
       caption: 'TypeScript',
     },
+     r: {
+      url: 'R.png',
+      alt: 'R logo',
+      caption: 'R',
+    },
+     python: {
+      url: 'Python.png',
+      alt: 'Python logo',
+      caption: 'Python',
+    },
   };
 
   private databases: { [key: string]: Image } = {
@@ -88,6 +98,21 @@ export class SkillsService {
       url: 'GitHub.png',
       alt: 'GitHub logo',
       caption: 'GitHub',
+    },
+      vs: {
+      url: 'VS.png',
+      alt: 'VS logo',
+      caption: 'Visual Studio',
+    },
+      vsCode: {
+      url: 'VS Code.png',
+      alt: 'VS Code logo',
+      caption: 'VS Code',
+    },
+      rStudio: {
+      url: 'RStudio.png',
+      alt: 'RStudio logo',
+      caption: 'RStudio',
     },
   };
   getDatabases(): Image[] {

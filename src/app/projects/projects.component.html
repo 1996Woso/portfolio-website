@@ -1,1 +1,35 @@
-<p>projects works!</p>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-8">
+      <app-heading>
+        <span heading-intro><i class="bi bi-rocket-takeoff fs-1"></i></span>
+        <span heading-title>Projects</span>
+        <span heading-sub>Complete projects</span>
+      </app-heading>
+      <div class="row">
+        @for (project of projects ; track $index) {
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-2">
+          <app-image-card
+            [imageUrl]="project.url!"
+            [imageAlt]="project.alt!"
+            [imageName]="project.caption!"
+            width="100%"
+            height="18rem"
+          >
+            <div class="d-flex justify-content-center flex-wrap gap-3">
+              <a
+                class="btn"
+                [href]="project.gitHubLink"
+                target="_blank"
+                rel="noopener"
+              >
+                <i class="bi bi-github fs-3"></i>
+              </a>
+            </div>
+          </app-image-card>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

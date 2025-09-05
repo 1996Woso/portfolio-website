@@ -12,28 +12,30 @@
           ><i class="bi bi-pc-display-horizontal"></i> Programming Languages
         </span>
         <ng-container skills-list>
-            <app-skill-card
-              *ngFor="
-                let skill of skillsService.getProgrammingLanguages();
-                let i = index
-              "
-              [imageUrl]="skill.url"
-              [imageAlt]="skill.alt"
-              [imageName]="skill.caption!"
-            />
+          <app-image-card
+            *ngFor="
+              let skill of skillsService.getProgrammingLanguages();
+              let i = index
+            "
+            [imageUrl]="skill.url"
+            [imageAlt]="skill.alt"
+            [imageName]="skill.caption!"
+            width="5rem"
+            height="7.5rem"
+          />
         </ng-container>
       </app-details>
       <!--Frameworks-->
       <app-details>
-        <span skills-title>
-          <i class="bi bi-globe2"></i> Frameworks
-        </span>
+        <span skills-title> <i class="bi bi-globe2"></i> Frameworks </span>
         <ng-container skills-list>
-          <app-skill-card 
+          <app-image-card
             *ngFor="let skill of skillsService.getFrameworks(); let i = index"
             [imageUrl]="skill.url"
             [imageAlt]="skill.alt"
             [imageName]="skill.caption!"
+            width="5rem"
+            height="7.5rem"
           />
         </ng-container>
       </app-details>
@@ -41,23 +43,32 @@
       <app-details>
         <span skills-title><i class="bi bi-database-fill"></i> Databases </span>
         <ng-container skills-list>
-          <app-skill-card
+          <app-image-card
             *ngFor="let skill of databaseSkills; let i = index"
             [imageUrl]="skill.url"
             [imageAlt]="skill.alt"
             [imageName]="skill.caption!"
+            width="5rem"
+            height="7.5rem"
           />
         </ng-container>
       </app-details>
       <!--Tools and Technologies-->
       <app-details>
-        <span skills-title><i class="bi bi-gear-fill"></i> Tools and Technologies</span>
+        <span skills-title
+          ><i class="bi bi-gear-fill"></i> Tools and Technologies</span
+        >
         <ng-container skills-list>
-          <app-skill-card
-            *ngFor="let skill of skillsService.getToolsAndTechnologies(); let i = index"
+          <app-image-card
+            *ngFor="
+              let skill of skillsService.getToolsAndTechnologies();
+              let i = index
+            "
             [imageUrl]="skill.url"
             [imageAlt]="skill.alt"
             [imageName]="skill.caption!"
+            width="5rem"
+            height="7.5rem"
           />
         </ng-container>
       </app-details>

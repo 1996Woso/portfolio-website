@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { HeadingComponent } from "../shared/heading/heading.component";
 import { HorizontalLineComponent } from "../shared/horizontal-line/horizontal-line.component";
 import { DetailsComponent } from "../shared/details/details.component";
+import { ExperienceService } from '../_services/experience.service';
 
 @Component({
   selector: 'app-experience',
@@ -10,5 +11,6 @@ import { DetailsComponent } from "../shared/details/details.component";
   styleUrl: './experience.component.css'
 })
 export class ExperienceComponent {
-
+  experienceService = inject(ExperienceService);
+  experience = this.experienceService.getExperience();
 }

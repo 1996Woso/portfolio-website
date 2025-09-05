@@ -6,45 +6,50 @@
         <span heading-title>Professional Experience</span>
         <span heading-sub>2+ working experience</span>
       </app-heading>
+      @for (experience of experience; track $index) {
       <app-details>
         <ng-content>
           <p>
-            <b>Software Developer & Data Analyst Intern</b>
+            <b>{{ experience.title }}</b>
             <br />
             <i class="bi bi-bank"></i> &nbsp;
-            <b>City of Johannesburg Metropolitan Municipality</b>
+            <b>{{ experience.company }}</b>
             <br />
-            <i class="bi bi-geo-fill"></i> Johannesburg, Gauteng
+            <i class="bi bi-geo-fill"></i> {{ experience.location }}
             <br />
-            <i class="bi bi-calendar-check-fill"></i> Jan 2024 - June 2025
+            <i class="bi bi-calendar-check-fill"></i> {{ experience.period }}
           </p>
           <app-horizontal-line />
           <p>
             <b><i class="bi bi-rocket-takeoff"></i> Key Responsibilities</b>
             <br />
+            @if (typeof experience.responsibilities === 'string') { 
+            <span>{{ experience.responsibilities }}</span>
+            <br />
+            <br />
+            } @else {
             <span>
               <ol>
-                <li>
-                  Plan, develop, test, deploy, and maintain web applications.
-                </li>
-                <li>Write SQL statements and stored procedures.</li>
-                <li>
-                  Communicate with clients to gather application requirements.
-                </li>
+                @for (item of experience.responsibilities; track $index) {
+                <li>{{ item }}</li>
+                }
               </ol>
             </span>
+            }
             <b><i class="bi bi-tools"></i> Technologies</b>
+            @if
+            (experience.company === 'Mindworx Consulting and Academy' && experience.title
+            === 'Systems Development trainee') {
             <br />
-            <span class="tool">.NET</span> &nbsp;
-            <span class="tool">C#</span> &nbsp;
-            <span class="tool">ASP.NET Core</span> &nbsp;
-            <span class="tool">ASP.NET Core MVC</span> &nbsp;
-            <span class="tool">JavaScript</span> &nbsp;
-            <span class="tool">MS SQL Server</span> &nbsp;
-            <span class="tool">IIS</span>
+            <i>Introduction to:</i>
+            }
+            <br />
+            @for (item of experience.technologies; track $index) {
+            <span class="tool">{{ item }}</span> &nbsp; }
           </p>
         </ng-content>
       </app-details>
+      }
     </div>
   </div>
 </div>

@@ -1,4 +1,4 @@
-<div class="card">
+<div class="card" [ngStyle]="{height: height(), width: width()}">
     <div class="card-img-wrapper">
     <img 
         src="{{imageUrl()}}"
@@ -10,5 +10,6 @@
         <p class="card-title text-center">
             {{imageName()}}
         </p>
+        <ng-content />
     </div>
 </div>
