@@ -1,25 +1,70 @@
-import { AfterViewInit, Component, ElementRef, inject, ViewChild } from '@angular/core';
+import {
+  AfterViewInit,
+  Component,
+  ElementRef,
+  inject,
+  OnInit,
+  viewChild,
+  ViewChild,
+} from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
   imports: [RouterLink],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  styleUrl: './header.component.css',
 })
-export class HeaderComponent implements AfterViewInit {
+export class HeaderComponent implements AfterViewInit, OnInit {
   router = inject(Router);
-  @ViewChild('hamMenu') hamMenu!: ElementRef;
-  @ViewChild('offScreenMenu') offScreenMenu!: ElementRef;
+  /**
+   * Decorator-base (old) @ViewChild()
+   */
+  // @ViewChild('hamMenu') hamMenu!: ElementRef;
+  // @ViewChild('offScreenMenu') offScreenMenu!: ElementRef;
+  /**
+   * Signal-base viewChild()
+   */
+  hamMenu = viewChild.required<ElementRef>('hamMenu');
+  offScreenMenu = viewChild.required<ElementRef>('offScreenMenu');
+
+  isHamMenuActive = false;
+  //Persisting the selected button across reloads (using localStorage).
+  clickedButton: string | null = localStorage.getItem('clickedButton');
+
+  setBorderActive(buttonId: string): void {
+    this.clickedButton = buttonId;
+    localStorage.setItem('clickedButton', buttonId);
+  }
 
   goToHome(): void {
+    this.clickedButton = null;
     this.router.navigateByUrl('');
   }
 
+  toggleHamMenu(): void {
+    this.isHamMenuActive = !this.isHamMenuActive;
+  }
+
+  closeHamMenu(): void {
+    this.isHamMenuActive = false;
+  }
+  /**Not safe */
   ngAfterViewInit(): void {
-      this.hamMenu.nativeElement.addEventListener('click', () => {
-        this.hamMenu.nativeElement.classList.toggle('active');
-        this.offScreenMenu.nativeElement.classList.toggle('active');
-      });
+    // this.hamMenu().nativeElement.addEventListener('click', () => {
+    //   this.hamMenu().nativeElement.classList.toggle('active');
+    //   this.offScreenMenu().nativeElement.classList.toggle('active');
+    // });
+
+    // const navButtons = this.offScreenMenu().nativeElement.querySelectorAll('a');
+    // navButtons.forEach((link: HTMLElement) => {
+    //   link.addEventListener('click', () => {
+    //     this.offScreenMenu().nativeElement.classList.remove('active');
+    //     this.hamMenu().nativeElement.classList.remove('active');
+    //   });
+    // });
+  }
+  ngOnInit(): void {
+      this.setBorderActive('');
   }
 }
