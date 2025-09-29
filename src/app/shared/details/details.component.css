@@ -4,4 +4,5 @@
   border-radius: 0.4rem;
   border-left: 3rem solid darkgray;
   border-right: 3rem solid darkgray;
+  box-shadow: 0 0 12px rgb(38, 38, 38);
 }

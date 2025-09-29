@@ -29,6 +29,7 @@ export class HeaderComponent implements AfterViewInit, OnInit {
   offScreenMenu = viewChild.required<ElementRef>('offScreenMenu');
 
   isHamMenuActive = false;
+  currentRoute: string = '';
   //Persisting the selected button across reloads (using localStorage).
   clickedButton: string | null = localStorage.getItem('clickedButton');
 
@@ -66,5 +67,18 @@ export class HeaderComponent implements AfterViewInit, OnInit {
   }
   ngOnInit(): void {
       this.setBorderActive('');
+  }
+
+  /**
+   *
+   */
+  constructor() {
+    this.router.events.subscribe(() => {
+      this.currentRoute = this.router.url;
+    });
+  }
+
+  isRouteActive(route: string): boolean {
+    return this.currentRoute === route;
   }
 }

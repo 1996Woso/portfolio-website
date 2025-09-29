@@ -59,11 +59,12 @@ a:hover {
   border-radius: 0.5rem;
   background-color: #0ea5aa; 
   border-top: 3px solid rgb(241, 196, 196);
-  border-bottom: 3px solid rgb(241, 196, 196);
-  border-left: 2px solid rgb(185, 120, 97);
-  border-right: 2px solid rgb(185, 120, 97);
+  border-bottom: 4px solid rgb(67, 65, 65);
+  border-left: 1px solid rgb(185, 120, 97);
+  border-right: 1px solid rgb(185, 120, 97);
   box-shadow: 0 0 8px rgb(21, 21, 21);
   color: black;
+  margin-bottom: 10px;
 }
 
 .bi {
@@ -74,7 +75,7 @@ a:hover {
 p {
   font-weight: bold;
   font-size: 1.28rem;
-  color: #242324;
+  color: #4a474a;
   background-color: rgb(139, 164, 155);
   border-radius: 40%;
   border-top: 3px solid rgb(241, 196, 196);
@@ -88,7 +89,7 @@ p {
 }
 
 p:hover {
-  color: rgb(239, 237, 232);
+  color: black;
   transform: scale(1.09);
   transition: 0.5s ease-in-out;
 }

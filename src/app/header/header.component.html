@@ -2,38 +2,28 @@
   <p (click)="goToHome()" >Eviwe</p>
   <nav>
     <ul>
-      <!-- <li>
-        <a routerLink="/about" class="btn"
-          ><i class="bi bi-file-person-fill"></i> About</a
-        >
-      </li> -->
       <li>
-        <a routerLink="/experience" class="btn" [class.active-border] = "clickedButton === 'experience'"
-          (click)="setBorderActive('experience')"
+        <a routerLink="/experience" class="btn" [class.active-border] = "isRouteActive('/experience')"
           ><i class="bi bi-luggage-fill"></i> Experience</a
         >
       </li>
       <li>
-        <a routerLink="/projects" class="btn" [class.active-border] = "clickedButton === 'projects'"
-          (click)="setBorderActive('projects')"
+        <a routerLink="/projects" class="btn" [class.active-border] = "isRouteActive('/projects')"
           ><i class="bi bi-rocket-takeoff"></i> Projects</a
         >
       </li>
       <li>
-        <a routerLink="/skills" class="btn" [class.active-border] = "clickedButton === 'skills'"
-          (click)="setBorderActive('skills')"
+        <a routerLink="/skills" class="btn" [class.active-border] = "isRouteActive('/skills')"
           ><i class="bi bi-tools"></i> Skills</a
         >
       </li>
       <li>
-        <a routerLink="/education" class="btn" [class.active-border] = "clickedButton === 'education'"
-          (click)="setBorderActive('education')"
+        <a routerLink="/education" class="btn" [class.active-border] = "isRouteActive('/education')"
           ><i class="bi bi-mortarboard-fill"></i> Education</a
         >
       </li>
       <li>
-        <a routerLink="/contact" class="btn" [class.active-border] = "clickedButton === 'contact'"
-          (click)="setBorderActive('contact')"
+        <a routerLink="/contact" class="btn" [class.active-border] = "isRouteActive('/contact')"
           ><i class="bi bi-telephone-fill"></i> Contact</a
         >
       </li>
@@ -43,39 +33,31 @@
 <!--For small screens-->
 <div #offScreenMenu class="off-screen-menu" [class.active]="isHamMenuActive">
   <ul>
-    <!-- <li>
-      <a routerLink="/about" class="btn" (click)="closeHamMenu()"
-        ><i class="bi bi-file-person-fill"></i> About</a
-      >
-    </li> -->
-    <li>
-      <a routerLink="/experience" class="btn" (click)="closeHamMenu()" [class.active-border] = "clickedButton === 'experience'"
-          (click)="setBorderActive('experience')"
-        ><i class="bi bi-luggage-fill"></i> Experience</a
-      >
-    </li>
-    <li>
-      <a routerLink="/projects" class="btn" (click)="closeHamMenu()" [class.active-border] = "clickedButton === 'projects'"
-          (click)="setBorderActive('projects')"
-        ><i class="bi bi-rocket-takeoff"></i> Projects</a
-      >
-    </li>
-    <li>
-      <a routerLink="/skills" class="btn" (click)="closeHamMenu()" [class.active-border] = "clickedButton === 'skills'"
-          (click)="setBorderActive('skills')"><i class="bi bi-tools"></i> Skills</a>
-    </li>
-    <li>
-      <a routerLink="/education" class="btn" (click)="closeHamMenu()" [class.active-border] = "clickedButton === 'education'"
-          (click)="setBorderActive('education')"
-        ><i class="bi bi-mortarboard-fill"></i> Education</a
-      >
-    </li>
-    <li>
-      <a routerLink="/contact" class="btn" (click)="closeHamMenu()" [class.active-border] = "clickedButton === 'contact'"
-          (click)="setBorderActive('contact')"
-        ><i class="bi bi-telephone-fill"></i> Contact</a
-      >
-    </li>
+     <li>
+        <a routerLink="/experience" class="btn" [class.active-border] = "isRouteActive('/experience')"
+          ><i class="bi bi-luggage-fill"></i> Experience</a
+        >
+      </li>
+      <li>
+        <a routerLink="/projects" class="btn" [class.active-border] = "isRouteActive('/projects')"
+          ><i class="bi bi-rocket-takeoff"></i> Projects</a
+        >
+      </li>
+      <li>
+        <a routerLink="/skills" class="btn" [class.active-border] = "isRouteActive('/skills')"
+          ><i class="bi bi-tools"></i> Skills</a
+        >
+      </li>
+      <li>
+        <a routerLink="/education" class="btn" [class.active-border] = "isRouteActive('/education')"
+          ><i class="bi bi-mortarboard-fill"></i> Education</a
+        >
+      </li>
+      <li>
+        <a routerLink="/contact" class="btn" [class.active-border] = "isRouteActive('/contact')"
+          ><i class="bi bi-telephone-fill"></i> Contact</a
+        >
+      </li>
   </ul>
 </div>
 <!--Humburger button-->

@@ -8,11 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 
 export const routes: Routes = [
-     {path: '', component:HomeComponent },
-    {path: 'about', component:AboutComponent },
-    {path: 'experience', component: ExperienceComponent},
-    {path: 'contact', component: ContactComponent},
-    {path: 'skills', component: SkillsComponent},
-    {path: 'education', component: EducationComponent},
-    {path: 'projects', component: ProjectsComponent}
+  { path: '', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'experience', component: ExperienceComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'skills', component: SkillsComponent },
+  { path: 'education', component: EducationComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: '**', component: AboutComponent, pathMatch: 'prefix' },
 ];
