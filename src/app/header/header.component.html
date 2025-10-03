@@ -35,26 +35,31 @@
   <ul>
      <li>
         <a routerLink="/experience" class="btn" [class.active-border] = "isRouteActive('/experience')"
+        (click)="closeHamMenu()"
           ><i class="bi bi-luggage-fill"></i> Experience</a
         >
       </li>
       <li>
         <a routerLink="/projects" class="btn" [class.active-border] = "isRouteActive('/projects')"
+         (click)="closeHamMenu()"
           ><i class="bi bi-rocket-takeoff"></i> Projects</a
         >
       </li>
       <li>
         <a routerLink="/skills" class="btn" [class.active-border] = "isRouteActive('/skills')"
+         (click)="closeHamMenu()"
           ><i class="bi bi-tools"></i> Skills</a
         >
       </li>
       <li>
         <a routerLink="/education" class="btn" [class.active-border] = "isRouteActive('/education')"
+         (click)="closeHamMenu()"
           ><i class="bi bi-mortarboard-fill"></i> Education</a
         >
       </li>
       <li>
         <a routerLink="/contact" class="btn" [class.active-border] = "isRouteActive('/contact')"
+         (click)="closeHamMenu()"
           ><i class="bi bi-telephone-fill"></i> Contact</a
         >
       </li>

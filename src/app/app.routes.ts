@@ -15,5 +15,5 @@ export const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'education', component: EducationComponent },
   { path: 'projects', component: ProjectsComponent },
-  { path: '**', component: AboutComponent, pathMatch: 'prefix' },
+  { path: '**', component: AboutComponent, pathMatch: 'full' },
 ];
