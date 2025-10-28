@@ -6,6 +6,7 @@ header {
   align-items: center;
   font-size: 1rem;
   padding: 1.5rem 10%;
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 ul {
@@ -13,19 +14,10 @@ ul {
 }
 
 .active-border {
-  color: #161516;
+  color: white;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid rgb(212, 206, 206);
-  border-radius: 0.5rem;
-  background-color: #2ea2a7;
-  border-top: 3px solid rgb(241, 196, 196);
-  border-bottom: 4px solid rgb(21, 18, 18);
-  border-left: 1px solid rgb(185, 120, 97);
-  border-right: 1px solid rgb(185, 120, 97);
-  box-shadow: 0 0 4px rgb(234, 232, 232);
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 10px;
+  border: 2px solid rgb(92, 87, 87);
 }
 
 header nav ul {
@@ -37,34 +29,14 @@ header nav ul {
 }
 
 a {
-  color: #4a474a;
-  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
   font-weight: bold;
-  border: 2px solid rgb(212, 206, 206);
-  border-radius: 0.5rem;
-  background-color: #2ea2a7;
-  border-top: 3px solid rgb(241, 196, 196);
-  border-bottom: 3px solid rgb(241, 196, 196);
-  border-left: 2px solid rgb(185, 120, 97);
-  border-right: 2px solid rgb(185, 120, 97);
-  box-shadow: 0 0 4px rgb(234, 232, 232);
-  font-family: "Times New Roman", Times, serif;
-  margin-bottom: 10px;
 }
 
 a:hover {
-  transform: scale(1.1);
+  transform: scale(1.09);
+  color: white;
   transition: 0.5s ease-in-out;
-  border: 2px solid rgb(49, 46, 46);
-  border-radius: 0.5rem;
-  background-color: #0ea5aa; 
-  border-top: 3px solid rgb(241, 196, 196);
-  border-bottom: 4px solid rgb(67, 65, 65);
-  border-left: 1px solid rgb(185, 120, 97);
-  border-right: 1px solid rgb(185, 120, 97);
-  box-shadow: 0 0 8px rgb(21, 21, 21);
-  color: black;
-  margin-bottom: 10px;
 }
 
 .bi {
@@ -75,27 +47,20 @@ a:hover {
 p {
   font-weight: bold;
   font-size: 1.28rem;
-  color: #4a474a;
-  background-color: rgb(139, 164, 155);
-  border-radius: 40%;
-  border-top: 3px solid rgb(241, 196, 196);
-  border-bottom: 3px solid rgb(241, 196, 196);
-  border-left: 2.5px solid rgb(185, 120, 97);
-  border-right: 2.5px solid rgb(185, 120, 97);
-  box-shadow: 0 0 4px rgb(234, 232, 232);
+  color: rgba(255, 255, 255, 0.7);
   font-family: "Times New Roman", Times, serif;
   cursor: pointer;
   padding: 2px;
 }
 
 p:hover {
-  color: black;
+  color: white;
   transform: scale(1.09);
   transition: 0.5s ease-in-out;
 }
 
 .off-screen-menu {
-  background-color: rgb(178, 185, 185);
+  background-color: black;
   height: 100vh;
   width: 100%;
   max-width: 250px;
@@ -126,7 +91,7 @@ p:hover {
 .ham-menu span {
   height: 5px;
   width: 100%;
-  background-color: rgb(28, 28, 29);
+  background-color: gray;
   border-radius: 25px;
   position: absolute;
   top: 50%;

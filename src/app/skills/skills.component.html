@@ -43,14 +43,15 @@
       <app-details>
         <span skills-title><i class="bi bi-database-fill"></i> Databases </span>
         <ng-container skills-list>
-          <app-image-card
-            *ngFor="let skill of databaseSkills; let i = index"
+          @for (skill of skillsService.getDatabases(); track $index) {
+            <app-image-card
             [imageUrl]="skill.url"
             [imageAlt]="skill.alt"
             [imageName]="skill.caption!"
             width="5rem"
             height="7.5rem"
           />
+          }
         </ng-container>
       </app-details>
       <!--Tools and Technologies-->

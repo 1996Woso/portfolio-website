@@ -1,21 +1,20 @@
 .heading {
-  background-color: rgba(71, 120, 141, 0.658);
-  color: rgb(52, 50, 50);
+  /* background-color:rgba(37, 36, 36, 0.762); */
+  color: black;
   border-radius: 0.4rem;
-  border-top: 0.4rem solid rgb(167, 161, 166);
-  border-bottom: 0.4rem solid rgb(167, 161, 166);
-  box-shadow: 0 0 12px rgb(38, 38, 38);
+  /* border-top: 0.4rem solid rgb(59, 57, 59);
+  border-bottom: 0.4rem solid rgb(59, 57, 59); */
+  /* box-shadow: 0 0 12px rgb(38, 38, 38); */
+  border: 2px solid black;
 }
 
 .heading-sub {
   text-align: center;
-  color: rgb(215, 219, 220);
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .heading-title {
   text-align: center;
-  color: rgb(63, 77, 63);
   font-weight: bold;
   font-size: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;

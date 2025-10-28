@@ -1,8 +1,6 @@
 import {
-  AfterViewInit,
   Component,
   inject,
-  OnInit,
 } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 
@@ -15,7 +13,7 @@ import { Router, RouterLink } from '@angular/router';
 export class HeaderComponent {
   router = inject(Router);
 
-  isHamMenuActive = false;
+  isHamMenuActive: boolean = false;
   currentRoute: string = '';
 
   goToHome(): void {

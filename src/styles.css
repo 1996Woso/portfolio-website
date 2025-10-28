@@ -10,7 +10,7 @@ html {
 
 body {
   /* margin: 0; */
-  background-color: #c0bdc3;
+  background-color: #e4ddea;
 }
 
 main {
@@ -41,7 +41,7 @@ main {
 
 /*Icons*/
 .bi-tools {
-    color: silver
+    color: rgb(76, 71, 71)
 }
 
 .bi-postage-fill {
@@ -113,7 +113,7 @@ main {
 }
 
 .bi-emoji-smile-fill {
-  color: rgb(221, 221, 210);
+  color: rgb(56, 56, 54);
 }
 
 .bi-github {

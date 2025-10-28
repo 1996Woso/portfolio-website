@@ -10,14 +10,7 @@ hr {
 }
 
 .contact-info {
-  background-color: rgba(236, 227, 227, 0.658);
   color: white;
   border-radius: 0.4rem;
   box-shadow: 0 0 12px rgb(38, 38, 38);
-}
-
-.heading {
-  background-color: rgba(71, 120, 141, 0.658);
-  color: rgb(52, 50, 50);
-  border-radius: 0.4rem;
 }

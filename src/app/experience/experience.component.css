@@ -1,8 +1,9 @@
 
 
 .tool {
-    background-color: rgb(171, 33, 111);
+    background-color: rgb(73, 68, 71);
     border-radius: 0.4rem;
     color: white;
     padding: 0 0.5rem;
+    border: 2px solid rgb(40, 40, 40);
 }

@@ -14,5 +14,4 @@ import { NgFor } from '@angular/common';
 })
 export class SkillsComponent {
   skillsService = inject(SkillsService);
-  databaseSkills  = this.skillsService.getDatabases();
 }
