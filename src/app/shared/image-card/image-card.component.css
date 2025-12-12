@@ -1,24 +1,25 @@
 img {
-    width: 100%;  height: auto;
+  width: 100%;
+  height: auto;
 }
 .card {
-    border: 2px solid rgb(177, 171, 171);
+  border: 2px solid rgb(177, 171, 171);
 }
 
 p {
-    font-size: 0.8rem;
-    font-weight: bold;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 .card:hover img {
-    transform: scale(1.09, 1.09);
-    transition-duration: 500ms;
-    transition-timing-function: ease-out;
+  transform: scale(1.09, 1.09);
+  transition-duration: 500ms;
+  transition-timing-function: ease-out;
 }
 .card-img-wrapper {
-    overflow: hidden;
-    position: relative;
+  overflow: hidden;
+  position: relative;
 }
 
 .card-body {
-    height: 0.8rem;
+  height: 0.8rem;
 }

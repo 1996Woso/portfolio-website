@@ -23,7 +23,7 @@
           <p>
             <b><i class="bi bi-rocket-takeoff"></i> Key Responsibilities</b>
             <br />
-            @if (typeof experience.responsibilities === 'string') { 
+            @if (typeof experience.responsibilities === 'string') {
             <span>{{ experience.responsibilities }}</span>
             <br />
             <br />
@@ -37,17 +37,17 @@
             </span>
             }
             <b><i class="bi bi-tools"></i> Technologies</b>
-            @if
-            (experience.company === 'Mindworx Consulting and Academy' && experience.title
-            === 'Systems Development trainee') {
+            @if (experience.company === 'Mindworx Consulting and Academy' &&
+            experience.title === 'Systems Development trainee') {
             <br />
             <i>Introduction to:</i>
             }
-            <br />
-            @for (item of experience.technologies; track $index) {
-            <span class="tool">{{ item }}</span> &nbsp; }
           </p>
         </ng-content>
+        <ng-container skills-list>
+          @for (item of experience.technologies; track $index) {
+          <span class="tool">{{ item }}</span> &nbsp; }
+        </ng-container>
       </app-details>
       }
     </div>

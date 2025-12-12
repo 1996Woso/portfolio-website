@@ -1,13 +1,30 @@
 img {
-    max-height: 15rem;
-    border-radius: 1rem;
+  max-height: 15rem;
+  border-radius: 1rem;
 }
 
 .about {
-    border-radius: 0.4rem;
-    background-color: rgb(232, 224, 224);
-    border-left: 5rem solid  rgb(27, 26, 26);
-    border-right: 5rem solid rgb(27, 26, 26);
-    border-bottom: 1.5rem solid rgba(17, 17, 17, 0.9);
-    border-top: 1.5rem solid rgba(17, 17, 17, 0.9);
+  border-radius: 0.4rem;
+  background-color: rgb(232, 224, 224);
+  border-left: 5rem solid rgb(27, 26, 26);
+  border-right: 5rem solid rgb(27, 26, 26);
+  border-bottom: 1.5rem solid rgba(17, 17, 17, 0.9);
+  border-top: 1.5rem solid rgba(17, 17, 17, 0.9);
 }
+.fs-6 {
+  color: rgb(64, 62, 62);
+}
+/* @media (max-width: 768px) {
+  p {
+    font-size: 0.8rem !important;
+  }
+  img {
+    max-height: 10rem;
+  }
+  .fs-5 {
+    font-size: 1.1rem !important;
+  }
+  .fs-6 {
+    font-size: 1rem !important;
+  }
+} */

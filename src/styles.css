@@ -38,7 +38,11 @@ main {
     flex-direction: row;
   }
 }
-
+@media(max-width: 768px){
+    .bi {
+        font-size: 1rem !important;
+    }
+}
 /*Icons*/
 .bi-tools {
     color: rgb(76, 71, 71)

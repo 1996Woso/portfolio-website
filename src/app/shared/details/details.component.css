@@ -4,3 +4,11 @@
   border-radius: 0.4rem;
   box-shadow: 0 0 12px rgb(38, 38, 38);
 }
+@media(max-width: 768px){
+    /* p {
+        font-size: 0.8rem !important;
+    } */
+    .row {
+      font-size: 0.8rem !important;
+    }
+}

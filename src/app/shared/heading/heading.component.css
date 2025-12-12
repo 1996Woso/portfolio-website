@@ -1,16 +1,14 @@
 .heading {
-  /* background-color:rgba(37, 36, 36, 0.762); */
-  color: black;
+  background-color:rgba(236, 227, 227, 0.658);
   border-radius: 0.4rem;
-  /* border-top: 0.4rem solid rgb(59, 57, 59);
-  border-bottom: 0.4rem solid rgb(59, 57, 59); */
-  /* box-shadow: 0 0 12px rgb(38, 38, 38); */
-  border: 2px solid black;
+  border: 3px solid rgb(27, 26, 26);
 }
 
 .heading-sub {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(90, 76, 76);
 }
 
 .heading-title {
@@ -18,4 +16,15 @@
   font-weight: bold;
   font-size: 2rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #000;
+}
+
+@media(max-width: 768px){
+  .heading-title {
+  font-size: 1rem;
+}
+
+.heading-sub {
+  font-size: 0.8rem !important;
+}
 }
