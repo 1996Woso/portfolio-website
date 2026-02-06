@@ -5,3 +5,7 @@
   box-shadow: 0 0 12px rgb(38, 38, 38);
   padding-top: 1rem;
 }
+.description {
+  font-size: 14px;
+  font-weight: 400;
+}

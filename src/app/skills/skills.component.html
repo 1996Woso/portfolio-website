@@ -20,8 +20,7 @@
             [imageUrl]="skill.url"
             [imageAlt]="skill.alt"
             [imageName]="skill.caption!"
-            width="5rem"
-            height="7.5rem"
+            [style]="{ width: '5rem', height: '7.5rem' }"
           />
         </ng-container>
       </app-details>
@@ -34,8 +33,7 @@
             [imageUrl]="skill.url"
             [imageAlt]="skill.alt"
             [imageName]="skill.caption!"
-            width="5rem"
-            height="7.5rem"
+            [style]="{ width: '5rem', height: '7.5rem' }"
           />
         </ng-container>
       </app-details>
@@ -44,12 +42,11 @@
         <span skills-title><i class="bi bi-database-fill"></i> Databases </span>
         <ng-container skills-list>
           @for (skill of skillsService.getDatabases(); track $index) {
-            <app-image-card
+          <app-image-card
             [imageUrl]="skill.url"
             [imageAlt]="skill.alt"
             [imageName]="skill.caption!"
-            width="5rem"
-            height="7.5rem"
+            [style]="{ width: '5rem', height: '7.5rem' }"
           />
           }
         </ng-container>
@@ -68,8 +65,7 @@
             [imageUrl]="skill.url"
             [imageAlt]="skill.alt"
             [imageName]="skill.caption!"
-            width="5rem"
-            height="7.5rem"
+            [style]="{ width: '5rem', height: '7.5rem' }"
           />
         </ng-container>
       </app-details>

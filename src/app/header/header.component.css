@@ -72,7 +72,7 @@ p:hover {
   text-align: start;
   font-size: 3rem;
   transition: 0.3s ease;
-  z-index: 1;
+  z-index: 100;
 }
 
 .off-screen-menu.active {
@@ -81,11 +81,11 @@ p:hover {
 
 .ham-menu {
   display: none;
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   margin-left: auto;
   position: relative;
-  z-index: 1;
+  z-index: 100;
 }
 
 .ham-menu span {
@@ -97,7 +97,7 @@ p:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: 0.3s ease;
+  transition: 0.03s ease;
 }
 
 .ham-menu span:nth-child(1) {
