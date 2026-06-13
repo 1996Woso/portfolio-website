@@ -74,6 +74,11 @@ export class SkillsService {
   };
 
   private toolsAndTechnologies: { [key: string]: Image } = {
+    powerbi: {
+      url: 'Power BI.png',
+      alt: 'Power BI logo',
+      caption: 'Power BI',
+    },
     html: {
       url: 'HTML5.png',
       alt: 'HTML5 logo',
